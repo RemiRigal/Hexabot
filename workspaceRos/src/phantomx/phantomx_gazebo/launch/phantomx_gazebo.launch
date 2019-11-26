@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="gui" default="true"/>
+
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name"  value="$(find phantomx_gazebo)/worlds/ground.world"/>
+        <arg name="paused"      value="true"/>
+        <arg name="gui"         value="$(arg gui)"/>
+    </include>
+
+    <include file="$(find phantomx_description)/launch/description.launch"/>
+
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model phantomx -z 0.5 -param robot_description"/>
+
+    <include file="$(find phantomx_control)/launch/phantomx_control.launch"/>
+
+    <node name="phantomx_walker" pkg="phantomx_gazebo" type="walker.py" />
+
+</launch>
