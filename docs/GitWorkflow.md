@@ -73,7 +73,7 @@ Cette étape peut entrainer des conflits, il est nécessaire de les résoudre po
 
 Sauvegarder les modifications sur la branche de développement du dépôt _forké_.
 ```sh
-git push -f origin BRANCH
+git push origin BRANCH
 ```
 
 
