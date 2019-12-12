@@ -3,12 +3,31 @@
 Ceci est un template de dépôt Git pour le cours d'ingénierie système et modélisation robotique de l'UV 5.8 à l'ENSTA Bretagne.
 
 
+## Lancer la simulation
+
+### Dépendences
+
+###### A compléter avec la/les dépendences.
+
+
+### Démarrer la simulation
+
+###### A compléter avec la/les commande(s) à lancer.
+```bash
+# TODO
+```
+
 
 ## Groupe
 
 ### Membres
 
-A compléter.
+###### A compléter avec les membres du groupe.
+
+
+### Gestion de projet
+
+###### A compléter avec le lien vers votre [Taiga](http://taiga.io).
 
 
 
