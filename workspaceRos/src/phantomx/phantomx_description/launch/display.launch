@@ -9,4 +9,6 @@
 
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find phantomx_description)/config/config.rviz" />
 
+    <node name="rsp" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
 </launch>

@@ -3,6 +3,4 @@
 
     <param name="robot_description" command="rosrun xacro xacro --inorder $(find phantomx_description)/urdf/phantomx.xacro" />
 
-    <node name="rsp" pkg="robot_state_publisher" type="robot_state_publisher"/>
-
 </launch>

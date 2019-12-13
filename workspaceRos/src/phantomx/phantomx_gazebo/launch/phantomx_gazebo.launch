@@ -12,6 +12,8 @@
 
     <include file="$(find phantomx_description)/launch/description.launch"/>
 
+    <node name="rsp" pkg="robot_state_publisher" type="robot_state_publisher" ns="phantomx"/>
+
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model phantomx -z 0.5 -param robot_description"/>
 
     <include file="$(find phantomx_control)/launch/phantomx_control.launch"/>
