@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
 <launch>
 
-    <arg name="gui" default="true"/>
+    <arg name="gui"     default="true"/>
+    <arg name="paused"  default="true"/>
 
 
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name"  value="$(find phantomx_gazebo)/worlds/ground.world"/>
-        <arg name="paused"      value="true"/>
+        <arg name="world_name"  value="$(find phantomx_gazebo)/worlds/simple_cave.world"/>
+        <arg name="paused"      value="$(arg paused)"/>
         <arg name="gui"         value="$(arg gui)"/>
     </include>
 

@@ -2,10 +2,7 @@
 <sdf version="1.5">
   <world name="default">
     <include>
-      <uri>model://sun</uri>
-    </include>
-    <include>
-      <uri>model://ground</uri>
+      <uri>model://simple_cave</uri>
     </include>
   </world>
 </sdf>
