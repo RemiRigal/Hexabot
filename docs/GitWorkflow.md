@@ -32,10 +32,6 @@ Enregistrer les modifications localement.
 ```sh
 git commit -m "COMMENT"
 ```
-Envoyer les changements au dépôt _forké_ distant.
-```sh
-git push origin BRANCH
-```
 
 
 ### 2. Mettre à jour la branche `master`
